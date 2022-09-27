@@ -24,9 +24,9 @@ form.addEventListener('submit', e => {
   let step = +form.elements['step'].value;
   let amount = +form.elements['amount'].value;
 
-  console.log(delay, step, amount);
+  
 
-  for (i = 1, j = delay; i <= amount; i++, j += step) {
+  for (let i = 1, j = delay; i <= amount; i++, j += step) {
     
     createPromise(i, j)
       .then(({ position, delay }) => {

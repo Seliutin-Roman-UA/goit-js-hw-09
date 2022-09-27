@@ -1,0 +1,7 @@
+button {
+      width: 75px;
+      height: 32px;
+    }
+    button + button {
+      margin-left: 32px;
+    }
